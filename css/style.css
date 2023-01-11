@@ -47,6 +47,10 @@ main {
       height: calc(100% / 10);
       width: calc(100% / 10);
       border: 1px solid black;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 }
 
 #grid-game .cell.clicked {
