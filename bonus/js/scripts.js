@@ -25,6 +25,15 @@ play.addEventListener('click',
                   const newCell = document.createElement('div');
                   newCell.classList.add('cell');
                   newCell.innerHTML = i;
+
+                  if(level == 100) {
+                        newCell.classList.add('easy');
+                  } else if (level == 81) {
+                        newCell.classList.add('normal');
+                  } else if (level == 49) {
+                        newCell.classList.add('hard');
+                  }
+
                   newCell.addEventListener('click',
                   
                         function() {
